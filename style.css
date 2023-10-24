@@ -15,16 +15,44 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 100px 600px 300px 400px;
+    /* grid-template-rows: 1fr 600px 300px 400px; */
     gap: 20px;
 }
 #container div {
     border-radius: 15px;
-    background-color: white;
 }
 
 #header {
-    background-color: aqua;
     grid-column: 1/5;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#header .logo {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+#header img {
+    height: 100%;
+}
+.nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav ul {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    gap: 20px;
+}
+.nav a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
 }
 #main {
     background-image: url("images/happiest-dog.jpeg");
