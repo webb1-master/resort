@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #eee;
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 600px 300px 400px;
+    gap: 20px;
+}
+#container div {
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#header {
+    background-color: aqua;
+    grid-column: 1/5;
+}
+#main {
+    background-color: #440101;
+    grid-column: 1/5;
+}
+
+#grooming {
+    background-color: #8a3939;
+    grid-column: 1/4;
+}
+#partners {
+    background-color: #66a;
+    grid-column: 4/5;
+    grid-row: 3/5;
+}
+.card {
+    background-color: #a82;
+}
