@@ -24,22 +24,16 @@ body {
 
 #header {
     grid-column: 1/5;
-    display: flex;
-    justify-content: space-between;
-    
-}
-#header .logo {
-    display: flex;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: 100px 200px 1fr min-content;
+    grid-auto-rows: 100px;
     align-items: center;
 }
 #header img {
     height: 100%;
 }
 .nav {
-    height: 100%;
-    display: flex;
-    align-items: center;
+    grid-column: 4/5;
 }
 .nav ul {
     list-style: none;
