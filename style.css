@@ -7,6 +7,7 @@ body {
     display: flex;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
+    color: #333;
 }
 
 #container {
@@ -16,9 +17,9 @@ body {
     grid-template-rows: 100px 600px 300px 400px;
     gap: 20px;
 }
-div {
+#container div {
     border-radius: 15px;
-    padding: 10px;
+    background-color: white;
 }
 
 #header {
@@ -45,8 +46,14 @@ div {
 }
 
 #grooming {
-    background-color: #8a3939;
+    padding: 20px;
     grid-column: 1/4;
+    display: flex;
+    gap: 20px;
+}
+#grooming img {
+    border-radius: 15px;
+    height: 100%;
 }
 #partners {
     background-color: #66a;
