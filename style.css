@@ -13,8 +13,7 @@ body {
     width: 1200px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* grid-template-rows: 100px 600px 300px 400px; */
-    grid-template-rows: 1fr 600px 300px 400px;
+    grid-template-rows: 100px 600px 1fr 400px;
     gap: 20px;
 }
 div {
@@ -68,8 +67,14 @@ div {
 }
 
 #offer {
-    background-color: #8a3939;
+    background-color: white;
     grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#offer img {
+    width: 100%;
+    border-radius: 15px;
 }
 #partners {
     background-color: #66a;
