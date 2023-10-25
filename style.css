@@ -13,7 +13,7 @@ body {
     width: 1200px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100px 600px 1fr 400px;
+    grid-template-rows: 100px 600px min-content min-content;
     gap: 20px;
 }
 div {
@@ -82,5 +82,9 @@ div {
     grid-row: 3/5;
 }
 .card {
-    background-color: #a82;
+    background-color: white;
+}
+.card img {
+    width: 100%;
+    border-radius: 15px;
 }
